@@ -1,0 +1,9 @@
+**/*.pyc
+**/.ipynb_checkpoints
+**/.pytest_cache
+**/__pycache__
+.idea
+.python-version
+.vscode
+venv
+.venv

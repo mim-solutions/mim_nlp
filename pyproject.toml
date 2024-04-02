@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "mim_nlp"
+version = "0.1.0"
+packages = [{include = "mim_nlp"}]
+description = ""
+authors = []
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/mim-solutions/mim_nlp"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "*"
+isort = "*"
+nbqa = "*"
+black = "*"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+combine_as_imports = true
+profile = "black"
+known_first_party = ["mim_nlp", "tests"]
+skip = [
+    ".git",
+    ".vscode",
+    ".idea",
+    "__pycache__",
+    ".ipynb_checkpoints",
+    "stripped",
+    "venv",
+    ".venv",
+    "dist",
+    ".hooks",
+]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = [
+    "mim_nlp",
+    "tests",
+]
+
+[tool.black]
+line-length = 120
+
+force-exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | .venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | stripped
+  | data
+  | .hooks
+)/
+'''

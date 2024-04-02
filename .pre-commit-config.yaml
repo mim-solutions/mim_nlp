@@ -1,0 +1,15 @@
+repos:
+
+- repo: local
+  hooks:
+    - id: isort
+      name: isort
+      entry: .hooks/isort.sh
+      pass_filenames: false
+      language: script
+
+    - id: strip-notebooks
+      name: Strip notebooks
+      entry: .hooks/strip_notebooks.py
+      pass_filenames: false
+      language: script
