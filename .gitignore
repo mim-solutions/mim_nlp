@@ -7,3 +7,10 @@
 .vscode
 venv
 .venv
+tmp
+/models
+lightning_logs
+
+# generated package files
+mim_nlp.egg-info
+/dist
