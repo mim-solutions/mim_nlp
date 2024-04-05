@@ -29,6 +29,28 @@ The package comes with the following extras (optional dependencies for given mod
 ## Usage
 Examples can be found in the [notebooks directory](/notebooks).
 
+### Model classes
+* `classifier.nn.NNClassifier` - Neural Network Classifier
+* `classifier.svm.SVMClassifier` - Support Vector Machine Classifier
+* `classifier.svm.SVMClassifierWithFeatureSelection` - `SVMClassifier` with additional feature selection step
+* `regressor.AutoRegressor` - regressor based on transformers' Auto Classes
+* `regressor.NNRegressor` - Neural Network Regressor
+* `seq2seq.AutoSummarizer` - summarizer based on transformers' Auto Classes
+
+### Interface
+All the model classes have common interface:
+* `fit`
+* `predict`
+* `save`
+* `load`
+
+and specific additional methods.
+
+### Text pre-processing
+* `preprocessing.TextCleaner` - define a pipeline for text cleaning, supports concurrent processesing
+* `preprocessing.lemmatize` - lemmatize text in Polish with Morfeusz
+* `preprocessing.Deduplicator` - find near-duplicate texts (depending on `threshold`) with Jaccard index for n-grams
+
 ## Development
 Remember to use a separate environment for each project.
 Run commands below inside the project's environment.
