@@ -12,13 +12,7 @@ from numpy.typing import NDArray
 from sklearn.exceptions import NotFittedError
 from torch.nn import Module
 from tqdm.autonotebook import tqdm
-from transformers import (
-    AutoModelForSeq2SeqLM,
-    AutoTokenizer,
-    PreTrainedTokenizerBase,
-    Trainer,
-    TrainingArguments,
-)
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, PreTrainedTokenizerBase, Trainer, TrainingArguments
 
 from mim_nlp.models import Summarizer
 from mim_nlp.seq2seq.data import Seq2SeqDataCollator, Seq2SeqDataset

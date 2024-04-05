@@ -14,11 +14,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 
-from mim_nlp.classifier.svm.svm_explainer import (
-    explain,
-    get_top_words,
-    plot_explanation,
-)
+from mim_nlp.classifier.svm.svm_explainer import explain, get_top_words, plot_explanation
 from mim_nlp.classifier.svm.svm_reduction import reduce_tfidf_model
 from mim_nlp.models import Classifier
 

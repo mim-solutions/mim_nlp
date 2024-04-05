@@ -7,10 +7,7 @@ import numpy as np
 import pandas as pd
 from scipy.cluster.hierarchy import DisjointSet
 
-from mim_nlp.preprocessing.utils import (
-    successive_intervals_boundaries_generator,
-    upper_matrix_boundaries_generator,
-)
+from mim_nlp.preprocessing.utils import successive_intervals_boundaries_generator, upper_matrix_boundaries_generator
 
 WHITESPACE = re.compile(r"\s+")
 
