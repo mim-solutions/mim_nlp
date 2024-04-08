@@ -65,7 +65,7 @@ protobuf = "3.20.2"
 pytest = "^7.3.1"
 pytorch-lightning = ">=1.5"
 scikit-learn = "^1.2.2"
-scipy = "^1.10.1"
+scipy = ">=1.10.1, <1.13"  # gensim requires `scipy.linalg.triu` removed in 1.13
 sentencepiece = "^0.1.99"
 tokenizers = "^0.13.3"
 torch = ">=1.7.1"
