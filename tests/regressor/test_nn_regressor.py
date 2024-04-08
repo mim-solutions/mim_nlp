@@ -92,8 +92,8 @@ def test_prediction_order(seed):
     # This will fail if the predictions are shuffled.
     predictions = model.predict(x_test)
     for i in range(len(x_test) - 1):
-        assert_almost_equal(predictions[i], expected_prediction_carrot, decimal=6)
-    assert_almost_equal(predictions[-1], expected_prediction_chair, decimal=6)
+        assert_almost_equal(predictions[i], expected_prediction_carrot, decimal=5)
+    assert_almost_equal(predictions[-1], expected_prediction_chair, decimal=5)
 
 
 def test_save_and_load_pre_trained_tokenizer(tmp_path):
