@@ -1,7 +1,7 @@
 import os
 
-from datasets import load_dataset
 import torch
+from datasets import load_dataset
 from transformers import TrainingArguments
 
 while "notebooks" in os.getcwd():

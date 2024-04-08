@@ -6,14 +6,14 @@ import os
 while "notebooks" in os.getcwd():
     os.chdir("..")
 
-from datasets import load_dataset
-from numpy import array_equal
 import torch
 import torch.nn as nn
-from torchmetrics import Precision
+from datasets import load_dataset
+from numpy import array_equal
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+from torchmetrics import Precision
 
 from mim_nlp.classifier.nn import NNClassifier
 # ---

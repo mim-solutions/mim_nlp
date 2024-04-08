@@ -6,10 +6,10 @@ import os
 while "notebooks" in os.getcwd():
     os.chdir("..")
 
-from datasets import load_dataset
-from numpy import array_equal
 import torch
 import torch.nn as nn
+from datasets import load_dataset
+from numpy import array_equal
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import mean_squared_error
 

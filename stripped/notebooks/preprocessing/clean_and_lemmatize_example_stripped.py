@@ -1,7 +1,7 @@
 import os
+from functools import partial
 
 from datasets import load_dataset
-from functools import partial
 
 while "notebooks" in os.getcwd():
     os.chdir("..")
@@ -9,12 +9,12 @@ while "notebooks" in os.getcwd():
 import gensim.parsing.preprocessing as gsp
 
 from mim_nlp.preprocessing import (
+    TextCleaner,
     lemmatize,
     process_emojis,
     remove_urls,
     strip_multiple_emojis,
     strip_short_words,
-    TextCleaner,
     token_usernames,
 )
 # ---
