@@ -37,7 +37,7 @@ class NNRegressor(NNModelMixin, Regressor):
 
     Example:
         >>> def mean_absolute_error(y_pred, y_target):
-        >>>     return torch.sum(torch.abs(y_target - y_pred)) / len(y_target)
+        ...     return torch.sum(torch.abs(y_target - y_pred)) / len(y_target)
 
     The `device` parameter can have the following values:
         - `"cpu"` - The model will be loaded on the CPU.

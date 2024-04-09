@@ -45,8 +45,8 @@ class NNClassifier(NNModelMixin, Classifier):
 
     Example:
         >>> def accuracy_binary(y_pred, y_target):
-        >>>     y_pred = y_pred > 0.5
-        >>>     return torch.sum(y_target == y_pred) / len(y_target)
+        ...     y_pred = y_pred > 0.5
+        ...     return torch.sum(y_target == y_pred) / len(y_target)
 
     The `device` parameter can have the following values:
         - `"cpu"` - The model will be loaded on the CPU.
