@@ -3,6 +3,11 @@ max-line-length = 120
 # W503: we prefer line breaks _before_ operators (as changed in PEP8 in 2016).
 # E203: whitespace before : , black is right here: https://github.com/psf/black/issues/315
 ignore = W503,E203
+# Ignore `F401` (unused imports) in all `__init__.py` files.
+# Ignore `E402` (import not at top of file) in all notebooks. `# flake8-noqa-cell-E402` doesn't work.
+per-file-ignores =
+    __init__.py: F401
+    notebooks/*: E402
 show-source = True
 statistics = True
 exclude =
