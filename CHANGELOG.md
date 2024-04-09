@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 April 3, 2024
+## 0.2.0 April 9, 2024
 * Moved files from GitLab project.
   * Classification
     * Neural Network
