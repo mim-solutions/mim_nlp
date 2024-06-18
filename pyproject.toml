@@ -44,9 +44,9 @@ scipy = { version = "^1.10.1", optional = true }
 accelerate = { version = "^0.20.1", optional = true }
 loguru = { version = "^0.7.0", optional = true }
 more-itertools = { version = "^9.1.0", optional = true }
-scikit-learn = { version = "^1.2.2", optional = true }
+scikit-learn = { version = "^1.5.0", optional = true }
 torch = { version = ">=1.7.1", optional = true }
-tqdm = { version = "^4.65.0", optional = true }
+tqdm = { version = "^4.66.3", optional = true }
 transformers = { version = "^4.29.2", optional = true }
 
 [tool.poetry.group.dev]
@@ -64,12 +64,12 @@ morfeusz2 = "^1.99.7"
 protobuf = "3.20.2"
 pytest = "^7.3.1"
 pytorch-lightning = ">=1.5"
-scikit-learn = "^1.2.2"
+scikit-learn = "^1.5.0"
 scipy = ">=1.10.1, <1.13"  # gensim requires `scipy.linalg.triu` removed in 1.13
 sentencepiece = "^0.1.99"
 tokenizers = "^0.13.3"
 torch = ">=1.7.1"
-tqdm = "^4.65.0"
+tqdm = "^4.66.3"
 transformers = "^4.29.2"
 torchmetrics = "^1.0.0"
 
