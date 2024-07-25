@@ -17,8 +17,11 @@ It comes with utilities for text pre-processing such as:
   * Deduplication
 
 ## Installation
+We recommend installing with pip.
+```sh
+pip install mim-nlp
+```
 
-### TODO PyPI package
 The package comes with the following extras (optional dependencies for given modules):
 - `svm` - simple svm model for classification
 - `classifier` - classification models: svm, neural networks
@@ -114,3 +117,5 @@ In order to add the next version of the package to PyPI, do the following steps:
 - First, increment the package version in `pyproject.toml`.
 - Then build the new version: run `poetry build` in the root directory.
 - Finally, upload to PyPI: `poetry publish` (two newly created files).
+  - If you get `Invalid or non-existent authentication information.` error,
+    add PyPI token to poetry: `poetry config pypi-token.pypi <my-token>`.

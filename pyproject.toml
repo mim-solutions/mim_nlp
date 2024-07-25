@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mim_nlp"
-version = "0.2.0"
+version = "0.2.1"
 packages = [{include = "mim_nlp"}]
 description = "A Python package with ready-to-use models for various NLP tasks and text preprocessing utilities. The implementation allows fine-tuning."
 authors = [
