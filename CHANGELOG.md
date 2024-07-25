@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1 July 25, 2024
+* PyPI release - minor README changes.
+
 ## 0.2.0 April 9, 2024
 * Moved files from GitLab project.
   * Classification
